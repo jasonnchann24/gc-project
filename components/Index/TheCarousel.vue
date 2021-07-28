@@ -9,7 +9,7 @@
         data-bs-interval="4000"
       >
         <img
-          :src="`img/banner/${imgName}`"
+          :src="`img/${imgName}`"
           class="d-block mx-auto"
           :alt="`banner ${imgName}`"
           loading="lazy"
@@ -48,15 +48,20 @@ export default {
   name: 'TheCarousel',
   data() {
     return {
-      imgList: ['banner1.jpg', 'banner3.png', 'banner4.png'],
+      imgList: [
+        'new-banner/lobby.jpg',
+        'new-banner/logo.jpg',
+        'new-banner/out.jpeg',
+        'new-banner/room.jpeg',
+      ],
       aboutUsList: [
-        'about-1.jpg',
-        'about-2.jpg',
-        'about-3.jpg',
-        'about-4.jpg',
-        'about-5.jpg',
-        'about-6.jpg',
-        'about-7.jpg',
+        'banner/about-1.jpg',
+        'banner/about-2.jpg',
+        'banner/about-3.jpg',
+        'banner/about-4.jpg',
+        'banner/about-5.jpg',
+        'banner/about-6.jpg',
+        'banner/about-7.jpg',
       ],
     }
   },
@@ -75,8 +80,8 @@ export default {
 <style scoped>
 img {
   width: 100%;
-  height: 65vh;
-  object-fit: cover;
+  max-height: 40vh;
+  object-fit: contain;
   object-position: 50% 50%;
 }
 .carousel-control-prev,
@@ -101,6 +106,9 @@ img {
 
   img {
     width: 90%;
+    max-height: 100%;
+    height: 60vh;
+    object-fit: cover;
   }
   .carousel-control-prev,
   .carousel-control-next {

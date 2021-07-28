@@ -6,14 +6,7 @@ heroImg: img/bgImg/bg-2.jpg
 overlayText: Special Offers
 ---
 
-<div class="container pb-5 px-3 pt-5 mb-5">
-<div class="row mt-4">
-<div class="col text-center">
-
-# Special Offers
-
-</div>
-</div>
+<div class="container pb-5 px-3 mb-5">
 
 <div class="row mt-5">
 <div class="col-12">

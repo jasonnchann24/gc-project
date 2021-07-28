@@ -10,6 +10,13 @@
         }
       "
     /> -->
+    <div class="row">
+      <img
+        src="/img/specialOffers/special-offer.jpg"
+        class="p-0 m-0 special-offer-banner"
+        alt="gc aesthetics clinic special offer"
+      />
+    </div>
     <article>
       <nuxt-content :document="document" />
     </article>
@@ -48,4 +55,9 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.special-offer-banner {
+  max-height: 55vh;
+  object-fit: contain;
+}
+</style>

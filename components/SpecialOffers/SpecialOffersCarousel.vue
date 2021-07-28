@@ -12,7 +12,7 @@
         class="carousel-item"
         :class="{ active: index == 0 }"
       >
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center align-items-center">
           <a
             v-for="(image, idx) in imgNames"
             :key="idx"
